@@ -510,7 +510,7 @@ class AudioFrame {
   void Reset();
 
   // |interleaved_| is not changed by this method.
-  void UpdateFrame(int id, uint32_t timestamp, const int16_t* data,
+  void UpdateFrame(uint32_t id, uint64_t timestamp, const int16_t* data,
                    size_t samples_per_channel, int sample_rate_hz,
                    SpeechType speech_type, VADActivity vad_activity,
                    int num_channels = 1, uint32_t energy = -1);
@@ -525,9 +525,9 @@ class AudioFrame {
   AudioFrame& operator+=(const AudioFrame& rhs);
   AudioFrame& operator-=(const AudioFrame& rhs);
 
-  int id_;
+  uint32_t id_;
   // RTP timestamp of the first sample in the AudioFrame.
-  uint32_t timestamp_;
+  uint64_t timestamp_;
   // Time since the first frame in milliseconds.
   // -1 represents an uninitialized value.
   int64_t elapsed_time_ms_;
@@ -572,8 +572,8 @@ inline void AudioFrame::Reset() {
   interleaved_ = true;
 }
 
-inline void AudioFrame::UpdateFrame(int id,
-                                    uint32_t timestamp,
+inline void AudioFrame::UpdateFrame(uint32_t id,
+                                    uint64_t timestamp,
                                     const int16_t* data,
                                     size_t samples_per_channel,
                                     int sample_rate_hz,

@@ -1,0 +1,10 @@
+SET(WEBRTC_SRC_LIST
+  ${WEBRTC_SRC_LIST}
+  ${CMAKE_CURRENT_SOURCE_DIR}/webrtc/base/criticalsection.cc
+  ${CMAKE_CURRENT_SOURCE_DIR}/webrtc/base/checks.cc
+  ${CMAKE_CURRENT_SOURCE_DIR}/webrtc/base/event.cc
+  ${CMAKE_CURRENT_SOURCE_DIR}/webrtc/base/platform_thread.cc
+  ${CMAKE_CURRENT_SOURCE_DIR}/webrtc/base/platform_file.cc
+  ${CMAKE_CURRENT_SOURCE_DIR}/webrtc/base/stringutils.cc
+  ${CMAKE_CURRENT_SOURCE_DIR}/webrtc/base/thread_checker_impl.cc
+)

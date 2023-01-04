@@ -1,0 +1,20 @@
+SET(WEBRTC_SRC_LIST
+  ${WEBRTC_SRC_LIST}
+  ${CMAKE_CURRENT_SOURCE_DIR}/webrtc/system_wrappers/source/aligned_malloc.cc
+  ${CMAKE_CURRENT_SOURCE_DIR}/webrtc/system_wrappers/source/cpu_features.cc
+  ${CMAKE_CURRENT_SOURCE_DIR}/webrtc/system_wrappers/source/event.cc
+  ${CMAKE_CURRENT_SOURCE_DIR}/webrtc/system_wrappers/source/file_impl.cc
+  ${CMAKE_CURRENT_SOURCE_DIR}/webrtc/system_wrappers/source/critical_section.cc
+  ${CMAKE_CURRENT_SOURCE_DIR}/webrtc/system_wrappers/source/logging.cc
+  ${CMAKE_CURRENT_SOURCE_DIR}/webrtc/system_wrappers/source/metrics_default.cc
+  ${CMAKE_CURRENT_SOURCE_DIR}/webrtc/system_wrappers/source/rw_lock.cc
+  ${CMAKE_CURRENT_SOURCE_DIR}/webrtc/system_wrappers/source/sleep.cc
+  ${CMAKE_CURRENT_SOURCE_DIR}/webrtc/system_wrappers/source/thread.cc
+  ${CMAKE_CURRENT_SOURCE_DIR}/webrtc/system_wrappers/source/trace_impl.cc
+
+  ${CMAKE_CURRENT_SOURCE_DIR}/webrtc/system_wrappers/source/critical_section_posix.cc
+  ${CMAKE_CURRENT_SOURCE_DIR}/webrtc/system_wrappers/source/event_timer_posix.cc
+  ${CMAKE_CURRENT_SOURCE_DIR}/webrtc/system_wrappers/source/rw_lock_posix.cc
+  ${CMAKE_CURRENT_SOURCE_DIR}/webrtc/system_wrappers/source/thread_posix.cc
+  ${CMAKE_CURRENT_SOURCE_DIR}/webrtc/system_wrappers/source/trace_posix.cc
+)
