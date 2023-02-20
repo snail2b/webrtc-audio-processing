@@ -1,0 +1,35 @@
+[binaries]
+c = '/opt/cvitek/x86-arm/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu/bin/aarch64-linux-gnu-gcc'
+cpp = '/opt/cvitek/x86-arm/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu/bin/aarch64-linux-gnu-g++'
+ar = '/opt/cvitek/x86-arm/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu/bin/aarch64-linux-gnu-ar'
+strip = '/opt/cvitek/x86-arm/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu/bin/aarch64-linux-gnu-strip'
+pkgconfig = '/usr/bin/pkg-config'
+cmake = '/usr/bin/cmake'
+ld = '/opt/cvitek/x86-arm/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu/bin/aarch64-linux-gnu-ld'
+#pcap-config = ''
+
+[properties]
+skip_sanity_check = true
+sys_root = '/opt/cvitek/x86-arm/gcc-linaro-6.3.1-2017.05-x86_64_aarch64-linux-gnu/aarch64-linux-gnu/libc'
+#root = '/Android/Sdk/ndk/22.1.7171670/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/29'
+
+[built-in options]
+c_args = ['-O2', '-pipe', '-g', '-feliminate-unused-debug-types']
+c_link_args = ['-Wl,-O1', '-Wl,--hash-style=gnu', '-Wl,--as-needed']
+cpp_args = ['-O2', '-pipe', '-g', '-feliminate-unused-debug-types']
+cpp_link_args = ['-Wl,-O1', '-Wl,--hash-style=gnu', '-Wl,--as-needed']
+#sys_root = '/Android/Sdk/ndk/22.1.7171670/toolchains/llvm/prebuilt/linux-x86_64/sysroot'
+#pkg_config_libdir ='/Android/Sdk/ndk/22.1.7171670/prebuilt/linux-x86_64/lib/pkgconfig'
+#pkg_config_libdir ='/Android/Sdk/ndk/22.1.7171670/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/29'
+
+[host_machine]
+system = 'linux'
+cpu_family = 'aarch64'
+cpu = 'armv8a'
+endian = 'little'
+
+[target_machine]
+system = 'linux'
+cpu_family = 'aarch64'
+cpu = 'armv8a'
+endian = 'little'
